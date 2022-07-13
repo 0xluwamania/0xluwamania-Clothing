@@ -1,11 +1,4 @@
-import { getRedirectResult } from "firebase/auth";
-import { useEffect,useState } from "react";
-import {
-  auth,
-  signInWithGooglePopup,
-  signInWithGoogleRedirect,
-  createUserDocumentFromAuth,
-} from "../../utils/firebase/firebase.utils";
+import "./authentication.styles.scss"
 
 import SignUpForm from "../../components/sign-up-form/sign-up-form.component";
 import SignInForm from "../../components/sign-in-form/sign-in-form.component";
@@ -34,9 +27,8 @@ const Authentication = () => {
   // }
 
   return (
-    <div>
-      <h2>I already have an account</h2>
-      <span>I already have an account</span>
+    <div className="authentication-container">
+     
       
    
       <SignInForm />
